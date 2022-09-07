@@ -44,6 +44,8 @@ class FlutterAadOauth {
   }
 
   Future<void> login() async {
+    print('login');
+    print('dave w');
     await _removeOldTokenOnFirstLogin();
     if (!Token.tokenIsValid(_token)) await _performAuthorization();
   }
